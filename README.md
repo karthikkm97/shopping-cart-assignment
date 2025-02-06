@@ -16,21 +16,14 @@ The Price API is a mock HTTP service that returns the price details for products
 
    ```bash
    npm install -g json-server
+   
 Or install it locally in your project:
 
-bash
-
-Verify
-Run
-Copy code
 npm install --save-dev json-server
+
+
 Start the Price API by running the following command in your project directory:
 
-bash
-
-Verify
-Run
-Copy code
 npm run serve-products
 The API will be available at http://localhost:3001/.
 
@@ -45,23 +38,23 @@ weetabix
 Example Usage
 You can modify the ShoppingCart.js file to add different products and quantities. Here’s an example of how to use the ShoppingCart class:
 
-javascript
+## javascript
 
-Verify
-Run
-Copy code
 const cart = new ShoppingCart();
 await cart.addProduct('cornflakes', 2);
 await cart.addProduct('weetabix', 1);
 const state = cart.getCartState();
 console.log(state);
-Expected Output
+
+
+# Expected Output
 For the example above, the expected output will be:
 
 ## Cart contents: { cornflakes: { quantity: 2, price: 4.99 }, weetabix: { quantity: 1, price: 7.29 } }
 ## Subtotal: 17.27
 ## Tax: 2.16
 ## Total: 19.43
+
 Assumptions
 The Price API is running locally on http://localhost:3001/.
 The db.json file contains the necessary product data.
@@ -73,49 +66,26 @@ Testing
 Running the Tests
 To run the unit tests, ensure you have Jest installed. You can install it as a development dependency by running:
 
-bash
-
-Verify
-Run
-Copy code
 npm install --save-dev jest
 Then, run the tests using:
 
-bash
-
-Verify
-Run
-Copy code
 npm test
 Testing the Solution
-Start the Price API:
-bash
 
-Verify
-Run
-Copy code
+Start the Price API:
 npm run serve-products
-Run the tests to verify the functionality of the ShoppingCart class.
 Conclusion
 This project demonstrates a simple implementation of a shopping cart with basic functionalities. The code is structured to be straightforward and easy to understand, with unit tests to ensure correctness. Feel free to modify and extend the functionality as needed.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-Verify
-Run
-Copy code
 
 ### Key Sections Explained
 
-- **Description**: Provides an overview of the project and its purpose.
-- **Features**: Lists the main functionalities of the shopping cart.
-- **Price API**: Instructions on how to set up and run the mock Price API.
-- **Available Products**: Lists the products available in the API.
-- **Example Usage**: Shows how to use the `ShoppingCart` class with sample code and expected output.
-- **Assumptions**: Lists any assumptions made during development.
-- **Trade-offs**: Discusses design choices and limitations.
-- **Testing**: Instructions on how to run tests and verify functionality.
-- **Conclusion**: Summarizes the project and encourages further modifications.
-- **License**: A placeholder for licensing information.
+- Description: Provides an overview of the project and its purpose.
+- Features: Lists the main functionalities of the shopping cart.
+- Price API: Instructions on how to set up and run the mock Price API.
+- Available Products: Lists the products available in the API.
+- Example Usage: Shows how to use the `ShoppingCart` class with sample code and expected output.
+- Assumptions: Lists any assumptions made during development.
+- Trade-offs: Discusses design choices and limitations.
+- Testing: Instructions on how to run tests and verify functionality.
+- Conclusion: Summarizes the project and encourages further modifications.
