@@ -58,14 +58,10 @@ console.log(state);
 Expected Output
 For the example above, the expected output will be:
 
-
-Verify
-Run
-Copy code
-Cart contents: { cornflakes: { quantity: 2, price: 4.99 }, weetabix: { quantity: 1, price: 7.29 } }
-Subtotal: 17.27
-Tax: 2.16
-Total: 19.43
+# Cart contents: { cornflakes: { quantity: 2, price: 4.99 }, weetabix: { quantity: 1, price: 7.29 } }
+# Subtotal: 17.27
+# Tax: 2.16
+# Total: 19.43
 Assumptions
 The Price API is running locally on http://localhost:3001/.
 The db.json file contains the necessary product data.
